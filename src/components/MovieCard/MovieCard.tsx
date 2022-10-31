@@ -1,3 +1,5 @@
+import "./MovieCard.scss"
+
 interface Movie {
   Title: string,
   Year: string,
