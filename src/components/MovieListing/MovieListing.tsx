@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux"
+
 import { getAllMovies } from "../../features/movies/movieSlice"
 import MovieCard from "../MovieCard/MovieCard"
+import "./MovieListing.scss"
 
 interface Movie {
   Title: string,
