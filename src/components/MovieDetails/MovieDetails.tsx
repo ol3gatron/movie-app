@@ -8,8 +8,6 @@ import { FaStar, FaThumbsUp, FaFilm, FaCalendar } from "react-icons/fa"
 import "./MovieDetails.scss"
 
 const MovieDetails = () => {
-  const [isLoading, setIsLoading] = useState(true)
-
   const { imdbID } = useParams()
   const dispatch = useDispatch()
   const data = useSelector(getDetails)
