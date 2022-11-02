@@ -21,6 +21,13 @@ body {
   background-color: $primary-color;
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container {
   margin: 0 2.5rem;
 }
