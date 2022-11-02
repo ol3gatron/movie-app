@@ -8,4 +8,11 @@ footer {
   height: 4rem;
   color: $font-primary;
   background-color: $secondary-color;
+
+  .credits {
+    a {
+      color: pink;
+      text-decoration: underline;
+    }
+  }
 }
