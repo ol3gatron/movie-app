@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
+
 import { fetchAsyncDetails, getDetails } from "../../features/movies/movieSlice"
+import { FaStar, FaThumbsUp, FaFilm, FaCalendar } from "react-icons/fa"
 
 import "./MovieDetails.scss"
 
@@ -20,16 +22,16 @@ const MovieDetails = () => {
         <div className="movie-title">{data.Title}</div>
         <div className="movie-rating">
           <span>
-            IMDB Rating <i className="fa fa-star"></i> : {data.imdbRating}
+            IMDB Rating <FaStar className="fa-star"/> : {data.imdbRating}
           </span>
           <span>
-            IMDB Votes <i className="fa fa-thumbs-up"></i> : {data.imdbVotes}
+            IMDB Votes <FaThumbsUp className="fa fa-thumbs-up"/> : {data.imdbVotes}
           </span>
           <span>
-            Runtime <i className="fa fa-film"></i> : {data.Runtime}
+            Runtime <FaFilm className="fa fa-film"/>: {data.Runtime}
           </span>
           <span>
-            Year <i className="fa fa-calendar"></i> : {data.Year}
+            Year <FaCalendar className="fa fa-calendar"/> : {data.Year}
           </span>
         </div>
         <div className="movie-plot">{data.Plot}</div>

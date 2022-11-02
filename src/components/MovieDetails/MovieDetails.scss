@@ -16,6 +16,9 @@
 
   span {
     margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 
@@ -50,11 +53,11 @@
 }
 
 .fa-film {
-  color: rgb(191, 213, 214);
+  color: #bfd5d6;
 }
 
 .fa-calendar {
-  color: peachpuff;
+  color: #ffdab9;
 }
 
 .section-right {
